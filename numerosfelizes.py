@@ -1,13 +1,13 @@
 def ehNumeroFeliz(num):
-    sobra = soma = 0;
+    sobra = sum = 0;
 
     # Calcula a soma dos dígitos ao quadrado
     while (num > 0):
         sobra = num % 10;
-        soma = soma + (sobra * sobra);
+        sum = sum + (sobra * sobra);
         num = num // 10;
     return sum;
-#Recebe o número do usuário
+
 num = int(input("Insira o número:"))
 
 result = num
@@ -19,4 +19,3 @@ if result==1:
 #Qualquer resultado que não termine em 1
 else:
     print(num,"é um número triste! D:")
-
